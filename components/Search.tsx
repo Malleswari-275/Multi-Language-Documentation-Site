@@ -60,11 +60,12 @@ export default function Search() {
   return (
     <div className="relative">
       <input
-        data-testid="search-input"
-        type="text"
-        placeholder="Search documentation..."
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
+  suppressHydrationWarning
+  data-testid="search-input"
+  type="text"
+  placeholder="Search documentation..."
+  value={query}
+  onChange={(e) => setQuery(e.target.value)}
         className="
   border border-gray-300 dark:border-gray-600
   bg-white dark:bg-gray-700
